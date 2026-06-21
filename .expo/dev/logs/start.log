@@ -1715,3 +1715,61 @@
 {"_e":"metro:client_log","_t":1782073983495,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","null","segments=","[\"(auth)\", \"login\"]"]}
 {"_e":"metro:client_log","_t":1782073983495,"level":"log","data":["[RouteGuard] inAuthGroup=","true"]}
 {"_e":"metro:client_log","_t":1782073983496,"level":"log","data":["[RouteGuard] No redirect needed"]}
+{"_e":"metro:bundling:started","_t":1782073991224,"id":"a","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1782073991224,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1782073991280,"id":"a","total":1,"ms":56.897083}
+{"_e":"metro:client_log","_t":1782073991502,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1782073991502,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1782073991598,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1782073991644,"level":"log","data":["[AuthContext] Initializing Firebase auth..."]}
+{"_e":"metro:client_log","_t":1782073991649,"level":"log","data":["[AuthContext] Auth state changed:","not authenticated"]}
+{"_e":"metro:client_log","_t":1782073991660,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","null","segments=","[\"(auth)\", \"login\"]"]}
+{"_e":"metro:client_log","_t":1782073991661,"level":"log","data":["[RouteGuard] inAuthGroup=","true"]}
+{"_e":"metro:client_log","_t":1782073991661,"level":"log","data":["[RouteGuard] No redirect needed"]}
+{"_e":"metro:client_log","_t":1782074055611,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1782074057007,"level":"log","data":["[AuthContext] Auth state changed:","bikethe200.dev@gmail.com"]}
+{"_e":"metro:client_log","_t":1782074057016,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(auth)\", \"login\"]"]}
+{"_e":"metro:client_log","_t":1782074057018,"level":"log","data":["[RouteGuard] inAuthGroup=","true"]}
+{"_e":"metro:client_log","_t":1782074057019,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from auth route)"]}
+{"_e":"metro:client_log","_t":1782074057032,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"dashboard\"]"]}
+{"_e":"metro:client_log","_t":1782074057033,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782074057034,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
+{"_e":"metro:client_log","_t":1782074057548,"level":"warn","data":["Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md"]}
+{"_e":"root:init","_t":1782074074773,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782074074773,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782074074775,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782074076238,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782074076398,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782074076833,"atlas":false,"workers":7,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1782074089875,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1782074089875,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782074089877,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782074089978,"id":"1","progress":0.1591612072113033,"total":381,"current":152}
+{"_e":"metro:bundling:progress","_t":1782074090078,"id":"1","progress":0.32820631897924984,"total":878,"current":503}
+{"_e":"metro:bundling:progress","_t":1782074090178,"id":"1","progress":0.6265124964090778,"total":1180,"current":934}
+{"_e":"metro:bundling:progress","_t":1782074090281,"id":"1","progress":0.6265124964090778,"total":2943,"current":978}
+{"_e":"metro:bundling:progress","_t":1782074090381,"id":"1","progress":0.6265124964090778,"total":3244,"current":2200}
+{"_e":"metro:bundling:progress","_t":1782074090484,"id":"1","progress":0.8584568131883579,"total":3498,"current":3241}
+{"_e":"metro:bundling:progress","_t":1782074090585,"id":"1","progress":0.8610667443666686,"total":4052,"current":3760}
+{"_e":"metro:bundling:progress","_t":1782074090685,"id":"1","progress":0.9872486738924393,"total":4534,"current":4505}
+{"_e":"metro:bundling:done","_t":1782074090784,"id":"1","total":4534,"ms":908.846041}
+{"_e":"metro:client_log","_t":1782074092662,"level":"log","data":["[AuthContext] Initializing Firebase auth..."]}
+{"_e":"metro:client_log","_t":1782074093209,"level":"log","data":["[AuthContext] Auth state changed:","bikethe200.dev@gmail.com"]}
+{"_e":"metro:client_log","_t":1782074093238,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[]"]}
+{"_e":"metro:client_log","_t":1782074093239,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782074093239,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
+{"_e":"metro:client_log","_t":1782074093323,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"dashboard\"]"]}
+{"_e":"metro:client_log","_t":1782074093325,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782074093325,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
+{"_e":"metro:client_log","_t":1782074101379,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"schedule\"]"]}
+{"_e":"metro:client_log","_t":1782074101380,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782074101380,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
+{"_e":"metro:client_log","_t":1782074101391,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"dashboard\"]"]}
+{"_e":"metro:client_log","_t":1782074101391,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782074101392,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
+{"_e":"metro:client_log","_t":1782077395446,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"dashboard\"]"]}
+{"_e":"metro:client_log","_t":1782077395450,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782077395450,"level":"log","data":["[RouteGuard] No redirect needed"]}
+{"_e":"metro:client_log","_t":1782077395846,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"dashboard\"]"]}
+{"_e":"metro:client_log","_t":1782077395849,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782077395850,"level":"log","data":["[RouteGuard] No redirect needed"]}

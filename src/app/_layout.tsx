@@ -35,11 +35,8 @@ function RouteGuard() {
       console.log("[RouteGuard] Redirecting to dashboard (from auth route)");
       router.replace("/(app)/dashboard");
     }
-    else if (user && !inAuthGroup) {
-      // Signed in but not in app-specific route (e.g., at root index) → redirect to dashboard
-      console.log("[RouteGuard] Redirecting to dashboard (from root)");
-      router.replace("/(app)/dashboard");
-    } else {
+    else {
+      // Signed in and in (app) group, or not signed in and in auth group → no redirect
       console.log("[RouteGuard] No redirect needed");
     }
   }, [user, loading, segments, router]);
