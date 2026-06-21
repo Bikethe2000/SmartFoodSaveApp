@@ -1594,3 +1594,39 @@
 {"_e":"devserver:start","_t":1782073504451,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
 {"_e":"metro:config","_t":1782073504634,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"metro:instantiate","_t":1782073505049,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1782073755121,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782073755121,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782073755122,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782073755319,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782073755519,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782073756086,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1782073805655,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782073805655,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782073805656,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782073813163,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782073813315,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782073813604,"atlas":false,"workers":7,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1782073832087,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1782073832087,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782073832090,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782073832190,"id":"1","progress":0.18537808641975312,"total":432,"current":186}
+{"_e":"metro:bundling:progress","_t":1782073832290,"id":"1","progress":0.41125518665299077,"total":867,"current":556}
+{"_e":"metro:bundling:progress","_t":1782073832390,"id":"1","progress":0.41125518665299077,"total":2721,"current":684}
+{"_e":"metro:bundling:progress","_t":1782073832490,"id":"1","progress":0.41125518665299077,"total":2906,"current":973}
+{"_e":"metro:bundling:progress","_t":1782073832590,"id":"1","progress":0.41125518665299077,"total":2909,"current":1741}
+{"_e":"metro:bundling:progress","_t":1782073832690,"id":"1","progress":0.8888023718836565,"total":3040,"current":2866}
+{"_e":"metro:bundling:progress","_t":1782073832794,"id":"1","progress":0.9066500079137413,"total":3346,"current":3186}
+{"_e":"metro:bundling:progress","_t":1782073832893,"id":"1","progress":0.9730374229786449,"total":3610,"current":3561}
+{"_e":"metro:bundling:progress","_t":1782073832993,"id":"1","progress":0.9730374229786449,"total":4282,"current":4119}
+{"_e":"metro:bundling:done","_t":1782073833126,"id":"1","total":4282,"ms":1038.805959}
+{"_e":"metro:client_log","_t":1782073834949,"level":"log","data":["[AuthContext] Initializing Firebase auth..."]}
+{"_e":"metro:client_log","_t":1782073835832,"level":"log","data":["[AuthContext] Auth state changed:","bikethe200.dev@gmail.com"]}
+{"_e":"metro:client_log","_t":1782073835863,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[]"]}
+{"_e":"metro:client_log","_t":1782073835863,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782073835863,"level":"log","data":["[RouteGuard] No redirect needed"]}
+{"_e":"metro:client_log","_t":1782073907474,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[]"]}
+{"_e":"metro:client_log","_t":1782073907474,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782073907475,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
+{"_e":"metro:client_log","_t":1782073907578,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[\"(app)\", \"dashboard\"]"]}
+{"_e":"metro:client_log","_t":1782073907580,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
+{"_e":"metro:client_log","_t":1782073907581,"level":"log","data":["[RouteGuard] Redirecting to dashboard (from root)"]}
