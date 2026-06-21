@@ -337,9 +337,10 @@ export default function DashboardScreen() {
   const predictNextWeek = useCallback(async () => {
     setPredicting(true);
     setWeeklyPrediction(null);
+    setError("");
     try {
       const token = await getToken();
-      if (!token) return;
+      if (!token) throw new Error("Not authenticated.");
 
       const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
       const dates    = getNextWeekdays();
@@ -364,6 +365,12 @@ export default function DashboardScreen() {
             excluded_meals:     suggestedSoFar,
           }),
         });
+
+        if (!res.ok) {
+          const errBody = await res.json().catch(() => ({}));
+          throw new Error(errBody.detail || `Prediction for ${day} failed.`);
+        }
+
         const data: PredictionResult = await res.json();
         results[day] = data;
         if (data.menuItemUsed) suggestedSoFar.push(data.menuItemUsed);
@@ -371,7 +378,7 @@ export default function DashboardScreen() {
 
       setWeeklyPrediction(results);
     } catch (err: any) {
-      setError("Prediction failed. Try again.");
+      setError(err.message || "Prediction failed. Try again.");
     } finally {
       setPredicting(false);
     }

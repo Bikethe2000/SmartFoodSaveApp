@@ -139,6 +139,11 @@ export default function PredictionsScreen() {
       const token = await getToken();
       if (!token) throw new Error("Not authenticated.");
 
+      // Validate required fields
+      if (!preparedPortions || !attendance) {
+        throw new Error("Please fill in Prepared Portions and Attendance.");
+      }
+
       const res = await fetch(`${API_BASE}/predict`, {
         method: "POST",
         headers: {
@@ -146,10 +151,10 @@ export default function PredictionsScreen() {
           Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({
-          date: date || null,
+          date: date || new Date().toISOString().split('T')[0],
           menu_item: menuItem.trim() || null,
-          prepared_portions: preparedPortions ? Number(preparedPortions) : null,
-          attendance: attendance ? Number(attendance) : null,
+          prepared_portions: Number(preparedPortions),
+          attendance: Number(attendance),
           preferred_foods: preferredFoods
             ? preferredFoods.split(",").map(s => s.trim()).filter(Boolean)
             : null,
