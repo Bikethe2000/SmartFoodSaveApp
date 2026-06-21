@@ -322,7 +322,10 @@ export default function DashboardScreen() {
     }
   }, []);
 
-  useEffect(() => { loadData(); }, [loadData]);
+  // Load data on mount
+  useEffect(() => {
+    loadData();
+  }, []);
 
   const onRefresh = useCallback(() => {
     setRefreshing(true);

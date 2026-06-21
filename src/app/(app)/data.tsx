@@ -180,14 +180,15 @@ export default function DataScreen() {
   const [formSuccess, setFormSuccess] = useState(false);
   const [formError, setFormError]     = useState("");
 
-  // Auto-calculate leftovers
-  useEffect(() => {
+  // Auto-calculate leftovers from prepared/served
+  const calculatedLeftovers = (() => {
     const p = parseInt(prepared);
     const sv = parseInt(served);
     if (!isNaN(p) && !isNaN(sv)) {
-      setLeftovers(String(Math.max(0, p - sv)));
+      return String(Math.max(0, p - sv));
     }
-  }, [prepared, served]);
+    return leftovers;
+  })();
 
   const fetchLogs = useCallback(async () => {
     setLogsLoading(true);
@@ -207,7 +208,10 @@ export default function DataScreen() {
     }
   }, []);
 
-  useEffect(() => { fetchLogs(); }, [fetchLogs]);
+  // Load logs on mount
+  useEffect(() => {
+    fetchLogs();
+  }, []);
 
   const handleSubmit = useCallback(async () => {
     setFormError("");

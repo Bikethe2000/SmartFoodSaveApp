@@ -1585,3 +1585,6 @@
 {"_e":"metro:client_log","_t":1782073350702,"level":"log","data":["[RouteGuard] Effect: loading=","false","user=","bikethe200.dev@gmail.com","segments=","[]"]}
 {"_e":"metro:client_log","_t":1782073350707,"level":"log","data":["[RouteGuard] inAuthGroup=","false"]}
 {"_e":"metro:client_log","_t":1782073350707,"level":"log","data":["[RouteGuard] No redirect needed"]}
+{"_e":"root:init","_t":1782073377479,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782073377479,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782073377480,"mode":"development","files":[],"env":{}}
