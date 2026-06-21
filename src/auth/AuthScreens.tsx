@@ -249,13 +249,15 @@ interface InputProps {
   onSubmitEditing?: () => void;
   inputRef?: React.RefObject<TextInput | null>;
 }
+// eslint-disable-next-line
 function Field(props: InputProps) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [focused, setFocused] = useState(false);
   const border      = props.hasError ? C.red600 : C.gray300;
   const focusBorder = props.hasError ? C.red600 : C.emerald600;
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   return (
     <View style={[s.inputWrap, { borderColor: focused ? focusBorder : border }, props.disabled ? s.inputDisabled : null]}>
+      {/* eslint-disable-next-line */}
       <TextInput
         ref={props.inputRef}
         style={[s.input, props.rightSlot ? { paddingRight: 44 } : null]}

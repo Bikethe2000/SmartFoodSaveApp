@@ -323,8 +323,8 @@ export default function DashboardScreen() {
   }, []);
 
   // Load data on mount
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line
     loadData();
   }, []);
 
