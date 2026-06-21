@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "myApp",
-    "slug": "myApp",
+    "name": "SmartFoodSave",
+    "slug": "SmartFoodSave",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "smartfoodsave",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"

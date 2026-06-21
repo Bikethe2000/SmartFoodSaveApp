@@ -1,19 +1,17 @@
-/**
- * app/(app)/_layout.tsx
- *
- * Layout for authenticated screens.
- * Add a tab bar or drawer here once you have more screens.
- */
-import { Stack } from "expo-router";
+import { Stack, useRouter } from "expo-router";
+import { useAuth } from "../../context/AuthContext";
+import { useEffect } from "react";
+import React from "react";
 
 export default function AppLayout() {
-  return (
-    <Stack
-      screenOptions={{
-        headerStyle:      { backgroundColor: "#f0fdf4" },
-        headerTintColor:  "#059669",
-        headerTitleStyle: { fontWeight: "700" },
-      }}
-    />
-  );
+  const { user, loading } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.replace("/(auth)/login");
+    }
+  }, [user, loading]);
+
+  return <Stack screenOptions={{ headerShown: false }} />;
 }

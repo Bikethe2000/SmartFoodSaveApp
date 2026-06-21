@@ -10,7 +10,7 @@ import { Slot, useRouter, useSegments } from "expo-router";
 import { AuthProvider, useAuth } from "../context/AuthContext";
 
 function RouteGuard() {
-  const { userToken, loading } = useAuth();
+  const { user, loading } = useAuth();
   const segments = useSegments();
   const router   = useRouter();
 
@@ -19,14 +19,14 @@ function RouteGuard() {
 
     const inAuthGroup = segments[0] === "(auth)";
 
-    if (!userToken && !inAuthGroup) {
+    if (!user && !inAuthGroup) {
       // Not signed in — send to login
       router.replace("/(auth)/login");
-    } else if (userToken && inAuthGroup) {
+    } else if (user && inAuthGroup) {
       // Already signed in — send to app
       router.replace("/(app)/dashboard");
     }
-  }, [userToken, loading, segments]);
+  }, [user, loading, segments]);
 
   return <Slot />;
 }
