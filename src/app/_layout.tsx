@@ -27,7 +27,7 @@ function RouteGuard() {
       // Signed in → go to dashboard
       router.replace("/(app)/dashboard");
     }
-  }, [user, loading, segments]);
+  }, [user, loading, segments, router]);
 
   return <Slot />;
 }

@@ -281,7 +281,7 @@ export default function WeeklyScheduleScreen() {
 
         {/* Schedule card */}
         <View style={s.card}>
-          <Text style={s.cardTitle}>Set this week's meals</Text>
+          <Text style={s.cardTitle}>Set this week&apos;s meals</Text>
           <Text style={s.cardSub}>
             Enter the planned menu for each day. Leave blank to skip a day.
           </Text>

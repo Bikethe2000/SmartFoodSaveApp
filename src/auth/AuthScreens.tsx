@@ -266,7 +266,7 @@ function Field(props: InputProps) {
         placeholderTextColor={C.gray400}
         secureTextEntry={props.secureTextEntry}
         keyboardType={props.keyboardType ?? "default"}
-        autoComplete={props.autoComplete}
+        autoComplete={props.autoComplete ?? "off"}
         autoCapitalize={props.autoCapitalize ?? "none"}
         autoCorrect={false}
         maxLength={props.maxLength}
