@@ -15,17 +15,27 @@ function RouteGuard() {
   const router   = useRouter();
 
   useEffect(() => {
-    if (loading) return;
+    console.log("[RouteGuard] Effect: loading=", loading, "user=", user?.email ?? null, "segments=", segments);
+    
+    if (loading) {
+      console.log("[RouteGuard] Still loading, skipping redirect");
+      return;
+    }
 
     const inAuthGroup = String(segments[0] ?? "") === "(auth)";
+    console.log("[RouteGuard] inAuthGroup=", inAuthGroup);
 
     if (!user && !inAuthGroup) {
       // Not signed in → go to login
+      console.log("[RouteGuard] Redirecting to login");
       router.replace("/(auth)/login");
     } 
     else if (user && inAuthGroup) {
       // Signed in → go to dashboard
+      console.log("[RouteGuard] Redirecting to dashboard");
       router.replace("/(app)/dashboard");
+    } else {
+      console.log("[RouteGuard] No redirect needed");
     }
   }, [user, loading, segments, router]);
 

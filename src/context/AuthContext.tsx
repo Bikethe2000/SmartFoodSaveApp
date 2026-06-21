@@ -20,7 +20,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log("[AuthContext] Initializing Firebase auth...");
     const unsub = onAuthStateChanged(auth, (firebaseUser) => {
+      console.log("[AuthContext] Auth state changed:", firebaseUser?.email ?? "not authenticated");
       setUser(firebaseUser);
       setLoading(false);
     });
