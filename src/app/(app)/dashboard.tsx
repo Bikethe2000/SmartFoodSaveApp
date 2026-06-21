@@ -21,6 +21,7 @@ import {
   ActivityIndicator,
   StyleSheet,
   Platform,
+  RefreshControl,
 } from "react-native";
 import {
   VictoryLine,
