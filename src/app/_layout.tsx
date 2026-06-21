@@ -17,13 +17,14 @@ function RouteGuard() {
   useEffect(() => {
     if (loading) return;
 
-    const inAuthGroup = segments[0] === "(auth)";
+    const inAuthGroup = String(segments[0] ?? "") === "(auth)";
 
     if (!user && !inAuthGroup) {
-      // Not signed in — send to login
+      // Not signed in → go to login
       router.replace("/(auth)/login");
-    } else if (user && inAuthGroup) {
-      // Already signed in — send to app
+    } 
+    else if (user && inAuthGroup) {
+      // Signed in → go to dashboard
       router.replace("/(app)/dashboard");
     }
   }, [user, loading, segments]);

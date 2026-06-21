@@ -12,7 +12,7 @@
  *   - Firebase auth for token
  */
 
-import React, { useEffect, useState, useCallback, useRef } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import {
   View,
   Text,
@@ -21,11 +21,6 @@ import {
   ActivityIndicator,
   StyleSheet,
   Platform,
-  RefreshControl,
-  Animated,
-  Pressable,
-  Dimensions,
-  StatusBar,
 } from "react-native";
 import {
   VictoryLine,
@@ -41,12 +36,6 @@ import {
   PieChart,
   CalendarDays,
   Lightbulb,
-  LayoutDashboard,
-  CalendarRange,
-  BarChart2,
-  Database,
-  Settings,
-  Mail,
   Menu,
 } from "lucide-react-native";
 import { useAuth } from "../../context/AuthContext";
@@ -54,8 +43,7 @@ import { auth } from "../../firebase";
 import SlideDrawer from "../../components/SlideDrawer";
 
 
-const SCREEN_WIDTH = Dimensions.get("window").width;
-const DRAWER_WIDTH = Math.min(SCREEN_WIDTH * 0.78, 300);
+
 
 
 // ─── Palette (matches the web UI) ─────────────────────────────────────────────

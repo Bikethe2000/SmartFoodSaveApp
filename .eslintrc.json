@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "extends": [
+    "expo",
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "react",
+    "react-native",
+    "react-hooks"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react/no-unescaped-entities": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "import/no-duplicates": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react-native/no-unused-styles": "warn",
+    "react-native/no-color-literals": "off"
+  }
+}

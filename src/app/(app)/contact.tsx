@@ -195,7 +195,7 @@ export default function ContactForm() {
           </View>
           <Text style={styles.title}>Get in Touch</Text>
           <Text style={styles.subtitle}>
-            Have questions about SmartFoodSave? We'd love to hear from you!
+            Have questions about SmartFoodSave? We&apos;d love to hear from you!
           </Text>
         </View>
 
@@ -206,7 +206,7 @@ export default function ContactForm() {
             <View style={styles.bannerTextWrap}>
               <Text style={styles.successTitle}>Message sent successfully!</Text>
               <Text style={styles.successBody}>
-                We'll get back to you within 24-48 hours.
+                We&apos;ll get back to you within 24-48 hours.
               </Text>
             </View>
           </View>

@@ -9,8 +9,10 @@ export default function SignupPage() {
 
   return (
     <SignupScreen
-      onSignupSuccess={() => router.replace("/(app)/dashboard")}
+      onSignupSuccess={() => router.replace("/(app)/dashboard" as any)}
+
       onNavigateLogin={() => router.back()}
+
     />
   );
 }

@@ -6,14 +6,7 @@
  * Auto-calculates leftovers from prepared − served.
  */
 
-import React, { useState, useEffect, useCallback, useRef } from "react";
-
-import {
-  TextInput,
-  KeyboardAvoidingView,
-} from "react-native";
-import { ClipboardList, History, Plus, Info, Calendar } from "lucide-react-native";
-import { auth } from "../../firebase";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   View,
   Text,
@@ -23,24 +16,13 @@ import {
   StyleSheet,
   Platform,
   RefreshControl,
-  Animated,
-  Pressable,
-  Dimensions,
-  StatusBar,
+  TextInput,
+  KeyboardAvoidingView,
 } from "react-native";
-import { Menu } from "lucide-react-native";
+import { ClipboardList, History, Plus, Info, Calendar, Menu } from "lucide-react-native";
+import { auth } from "../../firebase";
 import SlideDrawer from "../../components/SlideDrawer";
 import { useAuth } from "../../context/AuthContext";
-
-import {
-  LayoutDashboard,
-  CalendarRange,
-  BarChart2,
-  Database,
-  Settings,
-  Mail,
-} from "lucide-react-native";
-
 import { useRouter } from "expo-router";
 
 

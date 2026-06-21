@@ -10,5 +10,10 @@ import { Redirect } from "expo-router";
 export default function Index() {
   // RouteGuard in _layout.tsx handles the real redirect.
   // This is just a fallback so the route resolves.
-  return <Redirect href="/(auth)/login" />;
+  return <Redirect href="/_sitemap" />;
+
+
+
+
 }
+
