@@ -1455,3 +1455,32 @@
 {"_e":"metro:bundling:progress","_t":1782071347761,"id":"2","progress":0.9981317145602235,"total":3293,"current":3235}
 {"_e":"metro:bundling:progress","_t":1782071347861,"id":"2","progress":0.9981317145602235,"total":3831,"current":3631}
 {"_e":"metro:bundling:failed","_t":1782071347911,"id":"2","message":"Unable to resolve \"@/assets/images/tutorial-web.png\" from \"src/app/explore.tsx\"\n  82 |               </ThemedText>\n  83 |               <Image\n> 84 |                 source={require('@/assets/images/tutorial-web.png')}\n     |                                  ^\n  85 |                 style={styles.imageTutorial}\n  86 |               />\n  87 |             </ThemedView>","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/app/explore.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@/assets/images/tutorial-web.png\"\u001b[39m\n\n\u001b[90m \u001b[39msrc/app\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"@/assets/images/tutorial-web.png","originModulePath":"src/app/explore.tsx"}
+{"_e":"metro:bundling:started","_t":1782071485266,"id":"3","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1782071485267,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782071485270,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782071485370,"id":"3","progress":0.18339013203017834,"total":432,"current":185}
+{"_e":"metro:bundling:progress","_t":1782071485470,"id":"3","progress":0.4316421917366909,"total":965,"current":634}
+{"_e":"metro:bundling:progress","_t":1782071485578,"id":"3","progress":0.4316421917366909,"total":2886,"current":938}
+{"_e":"metro:bundling:progress","_t":1782071485678,"id":"3","progress":0.4316421917366909,"total":3109,"current":1098}
+{"_e":"metro:bundling:progress","_t":1782071485778,"id":"3","progress":0.8717036281104263,"total":3361,"current":3138}
+{"_e":"metro:bundling:progress","_t":1782071485878,"id":"3","progress":0.8717036281104263,"total":3975,"current":3642}
+{"_e":"metro:bundling:progress","_t":1782071485978,"id":"3","progress":0.9752659753086419,"total":4500,"current":4444}
+{"_e":"metro:bundling:failed","_t":1782071485987,"id":"3","message":"Unable to resolve \"@/assets/images/expo-badge-white.png\" from \"src/components/web-badge.tsx\"\n  18 |       <Image\n  19 |         source={\n> 20 |           scheme === 'dark'\n     |           ^\n  21 |             ? require('@/assets/images/expo-badge-white.png')\n  22 |             : require('@/assets/images/expo-badge.png')\n  23 |         }","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/components/web-badge.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@/assets/images/expo-badge-white.png\"\u001b[39m\n\n\u001b[90m \u001b[39msrc/app/explore.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@/components/web-badge\"\u001b[39m\n\n\u001b[90m \u001b[39msrc/app\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"@/assets/images/expo-badge-white.png","originModulePath":"src/components/web-badge.tsx"}
+{"_e":"root:init","_t":1782071560982,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782071560982,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782071560983,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782071561100,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782071561271,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782071561620,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782071562081,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1782071562081,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782071562083,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782071562183,"id":"1","progress":0.21656734319071982,"total":462,"current":215}
+{"_e":"metro:bundling:progress","_t":1782071562296,"id":"1","progress":0.3325356471469192,"total":874,"current":504}
+{"_e":"metro:bundling:progress","_t":1782071562407,"id":"1","progress":0.4505036034971645,"total":1104,"current":741}
+{"_e":"metro:bundling:progress","_t":1782071562507,"id":"1","progress":0.4505036034971645,"total":2966,"current":995}
+{"_e":"metro:bundling:progress","_t":1782071562607,"id":"1","progress":0.48461506466106596,"total":3189,"current":2220}
+{"_e":"metro:bundling:progress","_t":1782071562711,"id":"1","progress":0.8372538977515086,"total":3483,"current":3187}
+{"_e":"metro:bundling:progress","_t":1782071562811,"id":"1","progress":0.8494235910002229,"total":4020,"current":3705}
+{"_e":"metro:bundling:progress","_t":1782071562911,"id":"1","progress":0.9797940636131944,"total":4530,"current":4484}
+{"_e":"metro:bundling:done","_t":1782071563061,"id":"1","total":4530,"ms":980.260541}

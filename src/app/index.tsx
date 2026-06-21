@@ -1,19 +1,16 @@
 /**
  * app/index.tsx
  *
- * Immediately redirects based on auth state.
- * The actual redirect logic lives in _layout.tsx (RouteGuard),
- * but Expo Router requires a file at the index route.
+ * Root index route - RouteGuard in _layout.tsx handles all redirects.
+ * This component just returns null since routing is managed by the root layout.
  */
-import { Redirect } from "expo-router";
+import { useEffect } from "react";
 
 export default function Index() {
-  // RouteGuard in _layout.tsx handles the real redirect.
-  // This is just a fallback so the route resolves.
-  return <Redirect href="/_sitemap" />;
-
-
-
-
+  useEffect(() => {
+    // RouteGuard in _layout.tsx will handle the redirect based on auth state
+  }, []);
+  
+  return null;
 }
 
