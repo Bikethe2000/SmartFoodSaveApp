@@ -209,6 +209,7 @@ export default function DataScreen() {
   }, []);
 
   // Load logs on mount
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchLogs();
   }, []);

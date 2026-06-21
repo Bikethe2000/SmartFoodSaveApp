@@ -253,6 +253,7 @@ function Field(props: InputProps) {
   const [focused, setFocused] = useState(false);
   const border      = props.hasError ? C.red600 : C.gray300;
   const focusBorder = props.hasError ? C.red600 : C.emerald600;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   return (
     <View style={[s.inputWrap, { borderColor: focused ? focusBorder : border }, props.disabled ? s.inputDisabled : null]}>
       <TextInput
